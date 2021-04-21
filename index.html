@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XYZ Corp. Equipment Request</title>
 </head>
-<body background="./assets/computer.jfif">
+<body style="background-color: rgb(164, 240, 232);">
     <header style="width: 100%; text-align: center; background-color: rgb(102, 165, 173);">
-        <h1>XYZ Corp. Equiptment Request Page</h1>
+        <h1>XYZ Corp. Equipment Request Page</h1>
         <h2>Please use the form below to select your company equipment</h2>
         <Nav style="text-align: right; background-color: rgb(41, 19, 236); width: 100%;">
             <a href="#Home" style="color: white;">Home</a> | 
@@ -16,6 +16,77 @@
             <a href="#LogOut" style="color:white;">Log Out</a>
         </Nav>
     </header>
+    <div style="width: 100%; text-align: center;">
+        <h3>Please read instructions and select carefully</h3>
+        <p>You will be able to select from the following options:
+            <ul style="list-style-type: none;">
+                <li>Type of operating system</li>
+                <li>Number of additional monitors needed</li>
+                <li>If a keyboard and mouse is needed</li>
+            </ul>
+        </p>
+    </div>
+
+    <div style="border: solid 3px black; width: 100%; float: left;">
+        <form>
+            <fieldset>
+                <Legend>Operating System</Legend>
+                <p>
+                    <input type="radio" name="os" id="mac" value="mac" />
+                    <label for="mac">Mac</label>
+                </p>
+                <p>
+                    <input type="radio" name="os" id="windows" value="windows" />
+                    <label for="windows">Windows</label>
+                </p>
+                <p>
+                    <input type="radio" name="os" id="Unix" value="Unix" />
+                    <label for="Unix">Unix</label>
+                </p>
+                </form>
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>Number of Monitors</legend>
+                    <label for="monitors">Number of additional monitors</label>
+                    <input type="number" min="0" max="2">
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>Keyboard/Mouse needed?</legend>
+                    <ul>
+                        <li>
+                            <label for="keyboard">Keyboard?</label>
+                            <input type="checkbox" name="peripheral" id="keyboard" value="keyboard">
+                        </li>
+                            
+                        <li>
+                            <label for="mouse">Mouse?</label>
+                            <input type="checkbox" name="peripheral" id="mouse" value="mouse">
+                        </li>
+                    </ul>
+            </fieldset>
+            <div style="text-align: center;">
+                <label for="username">Username:</label>
+                <input type="text" maxlength="12">
+                   
+                <label for="password">Password:</label>
+                <input type="password">
+                <br>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <br />
+    <hr />
+    <br>
+    <p><h3>Additional resource:</h3></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RnM3u99xIf4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <footer style="background-color: rgb(102, 165, 173); text-align: center;">
+        <p>XYZ Corp. © 2021</p>
+    </footer>
+    
+               
     
 </body>
 </html>
